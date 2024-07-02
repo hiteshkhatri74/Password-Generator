@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  font-family: Arial;
+}
+.container {
+  margin-left: 30vw;
+  margin-top: 20vh;
+  height: 50vh;
+  width: 40vw;
+  background-color: #24232b;
+  padding: 24px;
+  padding-bottom: 0;
+}
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a8b8b;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.copyBtn {
+  height: 30px;
+  font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.charlength {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.charlength span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 16px;
+  font-weight: 700;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.checkboxes div {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.generateBtn {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.errorMessage {
+  color: red;
+  padding-bottom: 5px;
+}
+.password-strength {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  color: white;
 }
